@@ -1,4 +1,4 @@
-🌟 # 🌟 Banking Application
+<h2 align="center">🌟  E-Banking Application  🌟</h2>
 
 This project is a simple banking application developed with **Java**, **JDBC**, **Servlets**, **JSP**, **HTML**, and **CSS**. It provides essential banking features such as crediting, debiting, checking balances, transferring money, and changing passwords. The application follows a three-layer architecture for organized, modular code.
 
@@ -65,5 +65,3 @@ The project is organized into a **three-layer architecture**:
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Please open an issue or submit a pull request to suggest improvements or report bugs.
