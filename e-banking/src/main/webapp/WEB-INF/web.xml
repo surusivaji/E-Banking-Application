@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>e-banking</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>UserRegistration.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>userRegistration</servlet-name>
+		<servlet-class>com.ebanking.controller.UserRegistration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userRegistration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userLogin</servlet-name>
+		<servlet-class>com.ebanking.controller.UserLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userLogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>withdrawAmount</servlet-name>
+		<servlet-class>com.ebanking.controller.WithdrawAmount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>withdrawAmount</servlet-name>
+		<url-pattern>/withdraw</url-pattern>
+	</servlet-mapping>
+</web-app>

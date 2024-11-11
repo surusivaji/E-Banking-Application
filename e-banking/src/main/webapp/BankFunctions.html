@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bank Functions</title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+				font-family: Helvetica;
+			}
+			body {
+				background-color: lightgray;
+			}
+			.container {
+				margin-top: 270px;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+			button {
+				height: 80px;
+				width: 250px;
+				margin: 8px;
+				border-radius: 5px;
+				outline: none;
+				background-color: blue;
+				transition: 0.2s all;
+				box-shadow: 5px 5px 5px #000;
+				cursor: pointer;
+			}
+			button:hover {
+				transform: scale(1.2) translateY(-3px);
+				letter-spacing: 2px;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: 600;
+				transition: 0.2s all;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div><button id="btn1"><a href="./WithdrawlAmount.html">Withdrawl Amount</a></button>
+			<button id="btn2"><a href="./CreditAmount.html">Credit Amount</a></button></div>
+			<div id="btn3"><button><a href="./CheckStatement.html">Check Statement</a></button>
+			<button id="btn4"><a href="./ChangePassword.html">Change Password</a></button></div>
+		</div>
+	</body>
+</html>

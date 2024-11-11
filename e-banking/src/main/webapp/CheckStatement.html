@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OTP</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Helvetica;
+		}
+		body {
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: lightgray;
+			flex-direction: column;
+		}
+		.container {
+			height: 150px;
+			width: 300px;
+			color: white;
+			border: 2px solid #fff;
+			background-color: #fff;
+			box-shadow: 5px 5px 5px #000;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		input {
+			height: 32px;
+			width: 220px;
+			border-radius: 5px;
+			margin-top: 10px;
+			text-align: center;
+			font-size: 18px;
+			outline: none;
+			border: 1px solid black;
+		}
+		span {
+			display: flex;
+			justify-content: center;
+		}
+		#btn {
+			background-color: midnightblue;
+			color: white;
+			height: 32px;
+			width: 150px;
+			border-radius: 20px;
+			margin-top: 20px;
+			outline: none;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 20px;
+			letter-spacing: 2px;
+			transition: all 0.2s;
+			cursor: pointer;
+		}
+		#btn:hover {
+			background-color: white;
+			color: midnightblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="" method="post">
+			<input type="text" placeholder="Enter your OTP" name="uotp" autocomplete="off"><br>
+			<span><input type="submit" id="btn"></span>
+		</form>
+	</div>
+</body>
+</html>

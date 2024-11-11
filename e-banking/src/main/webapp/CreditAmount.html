@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Credit</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Helvetica;
+		}
+		body {
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: lightgray;
+			flex-direction: column;
+		}
+		.container {
+			height: 250px;
+			width: 350px;
+			color: white;
+			border: 2px solid #fff;
+			background-color: #fff;
+			box-shadow: 5px 5px 5px #000;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			animation-name: credit;
+			animation-duration: 2s;
+		}
+		@keyframes credit {
+			from {
+				transform: translateY(-900px) scale(0);
+			}
+			to {
+				transform: translateY(0px) scale(1);
+			}
+		}
+		h1 {
+			color: red;
+			font-size: 30px;
+			position: relative;
+			top: -32px;
+			text-shadow: 2px 1px blue;
+			font-weight: 900;
+		}
+		input {
+			height: 38px;
+			width: 270px;
+			border-radius: 5px;
+			margin-top: 10px;
+			text-align: center;
+			font-size: 18px;
+			outline: none;
+			border: 1px solid black;
+			font-size: 20px;
+		}
+		span {
+			display: flex;
+			justify-content: center;
+		}
+		#btn {
+			background-color: midnightblue;
+			color: white;
+			height: 32px;
+			width: 150px;
+			border-radius: 20px;
+			margin-top: 20px;
+			outline: none;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 20px;
+			letter-spacing: 2px;
+			transition: all 0.2s;
+			cursor: pointer;
+			position: relative;
+			top: 22px;
+			text-shadow: 2px 1px red;
+			box-shadow: 5px 5px 5px black;
+		}
+		#btn:hover {
+			background-color: white;
+			color: midnightblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>CREDIT FORM</h1>
+		<form action="creditAmount" method="post">
+			<input type="text" placeholder="enter your amount" name="credit" autocomplete="off"><br>
+			<span><input type="submit" value="credit" id="btn"></span>
+		</form>
+	</div>
+</body>
+</html>
