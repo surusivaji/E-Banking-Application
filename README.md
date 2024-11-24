@@ -109,6 +109,18 @@
     <p>Figure 6: Credit Funds Page</p>
 </div>
 
+<div align="center">
+    <h3>Show Transactions</h3>
+    <img src="usertransactions.png" alt="transaction Page" style="width: 50%;">
+    <p>Figure 6: Show User Transactions</p>
+</div>
+
+<div align="center">
+    <h3>Remove Transactions</h3>
+    <img src="removeTransactions.png" alt="Credit Page" style="width: 50%;">
+    <p>Figure 6:  Remove Transactions</p>
+</div>
+
 <hr>
 
 
