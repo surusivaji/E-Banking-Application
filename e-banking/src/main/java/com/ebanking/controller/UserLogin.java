@@ -41,7 +41,7 @@ public class UserLogin extends HttpServlet {
 			out.println("<h1 style='text-align:center;color:green;margin-bottom:30px;font-size:30px;font-family:Helventica;letter-spacing:1px;text-shadow:0px 2px 1px black;font-weight:900'>YOUR OTP : " + otp + "</h1>");
 			
 			session.setAttribute("gotp", otp);
-			session.setMaxInactiveInterval(100);
+			//session.setMaxInactiveInterval(100);
 			
 			session.setAttribute("fname", bankuserDetails.getFirstname());
 			session.setAttribute("lname", bankuserDetails.getLastname());

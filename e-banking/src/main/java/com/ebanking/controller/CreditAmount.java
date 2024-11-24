@@ -25,6 +25,8 @@ import com.ebanking.model.Statement;
 @WebServlet("/creditAmount")
 public class CreditAmount extends HttpServlet {
 	
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -39,7 +41,6 @@ public class CreditAmount extends HttpServlet {
 		String emailid = (String) session.getAttribute("mailid");
 		Integer accountno = (Integer) session.getAttribute("accountno");
 		Integer userid = (Integer) session.getAttribute("uid");
-		
 		
 		BankFunctionsDao bankFunctionsDao = new BankFunctionsDaoImpl();
 		

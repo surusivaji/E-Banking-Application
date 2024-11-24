@@ -116,4 +116,44 @@ public class UserDaoImpl implements UserDao {
 		}
 	}
 
+	@Override
+	public BankUserDetails getUserByUserId(int userid) {
+		try {
+			Class.forName(driver);
+			
+			connection = DriverManager.getConnection(url);
+			String selectUserById = "select * from Bank_User_Details where userid=?";
+			PreparedStatement preparedStatement = connection.prepareStatement(selectUserById);
+			preparedStatement.setInt(1, userid);
+			
+			ResultSet rs = preparedStatement.executeQuery();
+			if (rs.next()) {
+				BankUserDetails bankUserDetails = new BankUserDetails();
+				bankUserDetails.setId(rs.getInt(1));
+				bankUserDetails.setFirstname(rs.getString(2));
+				bankUserDetails.setLastname(rs.getString(3));
+				bankUserDetails.setEmailid(rs.getString(4));
+				bankUserDetails.setPassword(rs.getString(5));
+				bankUserDetails.setMobilenumber(rs.getString(6));
+				bankUserDetails.setAadharnumber(rs.getString(7));
+				bankUserDetails.setGender(rs.getString(8));
+				bankUserDetails.setAccountnumber(rs.getInt(9));
+				bankUserDetails.setAddress(rs.getString(10));
+				bankUserDetails.setAge(rs.getInt(11));
+				bankUserDetails.setDateofbirth(rs.getDate(12));
+				bankUserDetails.setIfsccode(rs.getString(13));
+				bankUserDetails.setAmount(rs.getDouble(14));
+				bankUserDetails.setFathername(rs.getString(15));
+				return bankUserDetails;
+			}
+			else {
+				return null;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+
 }

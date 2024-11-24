@@ -14,7 +14,6 @@ const amount = document.getElementById('amount');
 
 form.addEventListener('submit',(e) => {
     e.preventDefault();
-
     validateInputs();
 });
 

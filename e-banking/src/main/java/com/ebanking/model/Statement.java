@@ -30,7 +30,7 @@ public class Statement {
 		this.userid = userid;
 		this.bankaccountnumber = bankaccountnumber;
 		this.transactiontime = transactiontime;
-		this.remainingbalance = remainingbalance;
+		this.remainingbalance = remaingbalance;
 	}
 
 	public String getStatus() {
